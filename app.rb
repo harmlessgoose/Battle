@@ -7,8 +7,14 @@ class Battle < Sinatra::Base
   end
 
   get '/' do
-    "Testing infrastructure working!"
+    # "Testing infrastructure working!"
+  erb(:index)
   end
+
+ post '/names' do
+   erb(:play)
+ end
+
 
   # # Start the server if this file is executed directly (do not change the line below)
   run! if app_file == $0
