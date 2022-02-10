@@ -4,3 +4,8 @@ def sign_in_and_play
   fill_in :Player2, with: 'Peter'
   click_on 'Submit'
 end
+
+def attack
+  sign_in_and_play
+  click_on 'Attack'
+end 
